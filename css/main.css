@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* CSS Document */
+.hidden{
+	display: none;
+}
+
+
+body{
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 100%;
+background:#000000;
+}
+
+#container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px; 
+}
+
+#mainHeader{
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+}
+
+
+#mainNav{
+   display: flex;
+   flex-direction: column;
+   height: auto;
+}
+
+#mainNav ul li{
+	font-size: 23px;
+	list-style-type:none;
+}
+
+#mainNav ul li a{
+	padding: 10px 0;
+    color: #FFE400;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border-top: 0.2px solid  #FFF59d;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+
+
+#mainNav li:last-child{
+  border-bottom:1px solid  #FFF59d;
+  margin-bottom: 10px;
+}
+
+#mainNav ul li a:hover{
+   color: #000000;
+   background-color: #FFF59d;
+   border-radius: 1px;
+   border-bottom: 3px solid #FFE400;
+}
+
+#searchForm{
+  display: flex;
+  flex-direction:row;
+  margin:20px auto;
+  height: 40px;
+}
+
+#mainNav input[type=text]{
+  width: 75%;
+  padding: 10px;
+  border:3px solid #FFE400;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+  line-height: 1.5;
+}
+
+#mainNav input[type=text]:hover{
+	background-color: #FFF59d;
+	border:3px solid  #E65100;
+}
+
+#mainNav input[type=submit]{
+    height: 40px;
+    width: 24%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FFE400;
+    color: #000000;
+    border-color:  #FFE400;
+}
+#mainNav input[type=submit]:hover{
+	font-size: 21px;
+	color: #E65100;
+}
+
+#crownburger{
+  display: none;/*hide intitially*/
+  margin-top: 20px;/*bump menu below 3 lines*/
+}
+
+#crownburger.slideToggle{
+  display: block;
+}
+
+#mainNav button{
+  background:url(../images/burger.svg) center no-repeat;/*burger icon*/
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  transition: all 400ms ease;
+}
+
+
+#mainNav button.expanded{
+  -webkit-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+
+#Tyskie_logo{
+  display: block;
+  max-width: 350px;
+  margin :0 auto;
+}
+
+#HeaderImage{
+  margin: 30px auto;
+  height: 250px;
+  background-color:#FFE400; 
+}
+
+#HeaderImage h2{
+	font-size: 30px;
+	text-align: center;
+    padding-top: 110px;
+}
+
+#stage{
+	margin:10px auto;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+
+.stagebox{
+	background-color:#FFE400;
+	margin-bottom: 10px;
+	height: 200px;
+	width:100%; 
+}
+
+.stagebox h3{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.stagebox p{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer ul{
+   	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#footer ul li{
+	font-size: 14px;
+	list-style-type:none;
+}
+
+#footer ul li a{
+	padding: 10px 0;
+    color: #FFE400;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border-top: 0.2px solid  #FFF59d;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+#footer ul li a:hover{
+	border-top: 0.4px solid  red;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 40em){
+#mainNav button{
+  width: 45px;
+  height: 45px;
+  transition: all 400ms ease;
+}
+  #HeaderImage{
+  	background-color: #f57f17;
+  }
+  #HeaderImage h2{
+    font-size: 35px;
+  }
+  .stagebox{
+  	background-color: #f57f17;
+  }
+  .stagebox h3{
+  	font-size: 26px;
+  	padding: 18px
+  }
+  .stagebox p{
+  	font-size: 17px;
+  	padding: 10px
+  }
+  #footer ul li a{
+  	color: #f57f17;
+  	font-size: 20px;
+  }
+   #footer ul li a:hover{
+  	color: #f57f17;
+  	font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 65em){
+#button{
+    display: none;
+  }
+  
+  #mainHeader{
+  	display: flex;
+  	flex-direction: column;
+  }
+   #crownburger{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+   #logo{
+    order: -1;
+  }
+
+#searchFrom{
+	margin : 10px 0; 
+}
+#mainNav input[type=text]{
+  margin-left:67%;
+  width: 20%;
+  padding: 5px;
+  border:2px solid #FFE400;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+  line-height: 1;
+}
+
+#mainNav input[type=text]:hover{
+	background-color: #FFF59d;
+	border:2px solid  #E65100;
+}
+
+#mainNav input[type=submit]{
+    height: 30px;
+    width: 10%;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FFE400;
+    color: #000000;
+    border-color:  #FFE400;
+}
+#mainNav input[type=submit]:hover{
+	font-size: 17px;
+	color: #E65100;
+}
+
+  #burgerMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  
+   #crownburger ul li:last-child{
+  	 border-bottom: none
+  }
+
+  #crownburger ul li a{
+  	  font-size: 30px;
+  	  padding: 10px 60px;
+  	 border-bottom: 0.2px solid  #FFF59d;
+  }
+
+
+
+  #HeaderImage{
+  	background-color: #ffff8d;
+  }
+  #HeaderImage h2{
+    font-size: 38px;
+  }
+  .stagebox{
+  	background-color:  #ffff8d;
+  }
+  #stage{
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-evenly;
+  }
+  .stagebox{
+  	height: 450px;
+  	width: 320px;
+  }
+  .stagebox h3{
+  	font-size: 28px;
+  	padding: 20px
+  }
+  .stagebox p{
+  	font-size: 20px;
+  	padding: 13px
+  }
+  #footer ul li a{
+  	color:  #ffff8d;
+  	font-size: 25px;
+  }
+  #footer ul li a:hover{
+  	color:  #ffff8d;
+  	font-size: 25px;
+  }
+}
+
+
+@media screen and (min-width: 80em){
+  #HeaderImage{
+  	background-color: #FFE400;
+  }
+  .stagebox{
+  	background-color:#FFE400;
+  	width: 350px;
+  }
+
+  #footer ul li a{
+  	color: #FFE400;
+  	font-size: 25px;
+  }
+   #footer ul li a:hover{
+  	color: #FFE400;
+  	font-size: 25px;
+  }
+  #footer ul{
+  	justify-content: space-evenly;
+  }
+}
