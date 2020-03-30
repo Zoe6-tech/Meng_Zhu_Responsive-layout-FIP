@@ -72,7 +72,7 @@ background:#000000;
 }
 
 #mainNav input[type=text]{
-  width: 75%;
+  width: 70%;
   padding: 10px;
   border:3px solid #FFE400;
   border-radius: 3px 0px 0px 3px;
@@ -88,8 +88,8 @@ background:#000000;
 
 #mainNav input[type=submit]{
     height: 40px;
-    width: 24%;
-    font-size: 20px;
+    width: 20%;
+    font-size:15px;
     text-align: center;
     cursor: pointer;
     background-color: #FFE400;
@@ -97,7 +97,7 @@ background:#000000;
     border-color:  #FFE400;
 }
 #mainNav input[type=submit]:hover{
-	font-size: 21px;
+	font-size: 17px;
 	color: #E65100;
 }
 
